@@ -6,7 +6,6 @@ evs is CLI Tool for scainng AWS ECR Vulnerabilities.
 
 ```shell
 $ evs scan --image scantest:latest --region ap-northeast-1
-ImageName: scantest, Tag: latest
 +----------------+--------+
 | SEVERITY LEVEL | COUNTS |
 +----------------+--------+
@@ -18,7 +17,7 @@ ImageName: scantest, Tag: latest
 
 ## Commiter
 
-- jedipunkz
+jedipunkz
 
 ## LICENSE
 
