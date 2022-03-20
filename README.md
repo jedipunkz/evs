@@ -25,9 +25,9 @@ $ evs scan --image scantest:latest --region ap-northeast-1
 +----------------+--------+
 ```
 
-## Commiter
+## Credits
 
-jedipunkz
+Tomokazu HIRAI (@jedipunkz)
 
 
 ## License
