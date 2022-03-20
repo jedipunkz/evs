@@ -4,6 +4,7 @@
 *.dll
 *.so
 *.dylib
+evs
 
 # Test binary, built with `go test -c`
 *.test
