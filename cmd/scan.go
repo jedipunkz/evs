@@ -1,7 +1,6 @@
 package cmd
 
 import (
-	"fmt"
 	"os"
 	"strconv"
 	"strings"
@@ -45,8 +44,8 @@ var scanCmd = &cobra.Command{
 			log.Fatal(err)
 		}
 
-		fmt.Printf("\x1b[32m%s\x1b[0m", "ImageName: "+i.imageName+", ")
-		fmt.Printf("\x1b[32m%s\x1b[0m", "Tag: "+i.tag+"\n")
+		// fmt.Printf("\x1b[32m%s\x1b[0m", "ImageName: "+i.imageName+", ")
+		// fmt.Printf("\x1b[32m%s\x1b[0m", "Tag: "+i.tag+"\n")
 
 		data := [][]string{}
 		for k, v := range finding.FindingSeverityCounts {
