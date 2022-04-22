@@ -26,7 +26,6 @@ var scanCmd = &cobra.Command{
 	Use:   "scan",
 	Short: "scan image",
 	Run: func(cmd *cobra.Command, args []string) {
-
 		e := myecr.Ecr{}
 
 		i := Image{}
