@@ -6,7 +6,7 @@ require (
 	github.com/jedipunkz/ecrscan v0.0.0-20220320142551-eff045b4863a
 	github.com/olekukonko/tablewriter v0.0.5
 	github.com/sirupsen/logrus v1.9.0
-	github.com/spf13/cobra v1.4.0
+	github.com/spf13/cobra v1.5.0
 )
 
 require (
