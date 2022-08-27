@@ -1,4 +1,4 @@
-name: Release CLI to the GitHub Release
+name: GitHub Release
 on:
   workflow_dispatch:
     inputs:
