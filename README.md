@@ -37,20 +37,7 @@ $ evs list --image testimage:latest --region ap-northeast-1
 |                  |               |                                                                | where several Nettle signature  |
 |                  |               |                                                                | verification functions          |
 |                  |               |                                                                | (GOST DSA, EDDSA & ECDSA)       |
-
 <snip>
-
-| CVE-2020-14155   | INFORMATIONAL | http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-14155   | libpcre in PCRE before 8.44     |
-|                  |               |                                                                | allows an integer overflow      |
-|                  |               |                                                                | via a large number after a (?C  |
-|                  |               |                                                                | substring.                      |
-| CVE-2017-11164   | INFORMATIONAL | http://people.ubuntu.com/~ubuntu-security/cve/CVE-2017-11164   | In PCRE 8.41, the OP_KETRMAX    |
-|                  |               |                                                                | feature in the match function   |
-|                  |               |                                                                | in pcre_exec.c allows stack     |
-|                  |               |                                                                | exhaustion (uncontrolled        |
-|                  |               |                                                                | recursion) when processing a    |
-|                  |               |                                                                | crafted regular expression.     |
-+------------------+---------------+----------------------------------------------------------------+---------------------------------+
 ```
 
 ## Credits
