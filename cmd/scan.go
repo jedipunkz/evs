@@ -63,9 +63,13 @@ var scanCmd = &cobra.Command{
 func init() {
 	rootCmd.AddCommand(scanCmd)
 	scanCmd.Flags().StringVarP(&setFlags.image, "image", "", "", "Image Name")
-	scanCmd.MarkFlagRequired("image")
+	if err := scanCmd.MarkFlagRequired("image"); err != nil {
+		log.Fatal(err)
+	}
 	scanCmd.Flags().StringVarP(&setFlags.region, "region", "", "", "Region Name")
-	scanCmd.MarkFlagRequired("region")
+	if err := scanCmd.MarkFlagRequired("region"); err != nil {
+		log.Fatal(err)
+	}
 }
 
 func (i *Image) getImageTag(image string) bool {
