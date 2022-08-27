@@ -52,7 +52,11 @@ var listCmd = &cobra.Command{
 func init() {
 	rootCmd.AddCommand(listCmd)
 	listCmd.Flags().StringVarP(&listSetFlags.image, "image", "", "", "Image Name")
-	listCmd.MarkFlagRequired("image")
+	if err := listCmd.MarkFlagRequired("image"); err != nil {
+		log.Fatal(err)
+	}
 	listCmd.Flags().StringVarP(&listSetFlags.region, "region", "", "", "Region Name")
-	listCmd.MarkFlagRequired("region")
+	if err := listCmd.MarkFlagRequired("region"); err != nil {
+		log.Fatal(err)
+	}
 }
